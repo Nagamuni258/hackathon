@@ -1,0 +1,158 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "fira-code", monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    border-bottom: 2px solid #333;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f7f9f7;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 25px;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #f5f6f5;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 2px solid #f0f3f0;
+    color: #ecefec;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #4CAF50;
+    color: #121212;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 48px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #a0a0a0;
+     font-family: "fira-code", sans-serif;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.submit-btn {
+    background-color: #eef1ee;
+    color: #121212;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #5cb85c;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #333;
+    font-size: 14px;
+    color: #a0a0a0;
+}
