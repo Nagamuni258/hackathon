@@ -115,4 +115,85 @@ body{
         display: inline-block;
     }
 }
-   
+.logo-nav {
+    background-image: url(Screenshot\ 2025-08-29\ 013743.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 20px;
+}
+.logo-nav-text {
+    font-size: 20px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    top: 33px;
+    left: 80px;
+    display: flex;
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 20px;
+    left: 368px;
+    height: 50px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    border-radius: 30px; 
+    animation: navbar 1.5s ease-in-out;
+    animation-delay: 4s;
+    width: 50%;
+    gap: 140px;
+    padding-left: 70px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.login-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: white;
+    border-radius: 40px;
+    height: 45px;
+    width: 100px;
+}
+.content{
+    margin-top: 200px;
+    padding: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-left: 70px;
+    
+}
+.get-started-button {
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.visualizer-video{
+    height: 1500px;
+    width: 1500px;
+    position: absolute;
+    padding: 20px;
+    padding-right: 100px;
+}
