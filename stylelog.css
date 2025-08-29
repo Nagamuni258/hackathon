@@ -1,7 +1,8 @@
 body {
     background-color: #121212;
     color: #e0e0e0;
-    font-family: "fira-code", monospace;
+    font-family: sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     line-height: 1.6;

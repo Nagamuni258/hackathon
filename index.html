@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance AI</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
         /* Popup modal styles (shared for About, Services, Contact) */
         .modal {
@@ -111,11 +112,17 @@
         <h1>Welcome to Finance AI</h1>
         <p>Your trusted partner in financial statements</p>
         <!-- <button class="get-started-button">Get Started</button> -->
-        <a href="#details" class="get-started-button">Get Started</a>
-        <section id="details">
-    
-    </section>
-
+        <button onclick="scrollToHeight" class="get-started-button" style="text-decoration: none;">Get Started</button>
+    <script>
+    function scrollToHeight() {
+      // Change 800 to the height you want to scroll to (in px)
+      window.scrollTo({
+        height: 800,
+        top: 800,
+        behavior: "smooth"
+      });
+    }
+  </script>
     </div>
     
     <div class="visulazer">
@@ -228,6 +235,6 @@
       </select>
     </div>
   </div>
-
+<script src="main.js"></script>
 </body>
 </html>

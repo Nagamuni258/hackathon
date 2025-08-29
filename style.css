@@ -182,7 +182,6 @@ html {
     
 }
 .get-started-button {
-    margin-top: 20px;
     background-color: white;
     color: black;
     border: none;
@@ -226,7 +225,7 @@ html {
       position: relative;
       height: 200px;
       width: 900px;
-      top: 1000px;  
+      top: 500px;  
         left: 300px;
       background: #2a2a2a;
       border-radius: 12px;
