@@ -9,17 +9,14 @@ body{
 html {
     scroll-behavior: smooth;
 }
-.background-video
-{
-    position: absolute;
+.background-video {
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    padding-right: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Adjust opacity as needed */
 }
 
 #overlay {
@@ -190,6 +187,7 @@ html {
     font-size: 20px;
     cursor: pointer;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .visualizer-video{
@@ -213,7 +211,7 @@ html {
 
 .Chat-text {
     position: absolute;
-    top: 700px;
+    top: 870px;
     left: 490px;
     width: 600px;
     color: white;
@@ -225,15 +223,15 @@ html {
       position: relative;
       height: 200px;
       width: 900px;
-      top: 500px;  
+      top: 650px;  
         left: 300px;
-      background: #2a2a2a;
+      background: #181818;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.4);
       display: flex;
       flex-direction: column;
       padding: 16px;
-      color: #f0f0f0;
+      color: #363636;
       font-size: 39px;
     }
 
@@ -247,8 +245,8 @@ html {
     .top-inputs input {
       flex: 1;
       padding: 6px 8px;
-      background: #3a3a3a;
-      border: 1px solid #555;
+      background: #181818;
+      border: 1px solid #363636;
       border-radius: 6px;
       color: #fff;
       outline: none;
@@ -256,13 +254,13 @@ html {
 
 
     .prompt-input {
-      width: 100%;
+      width: 98%;
       height: 3.5em; /* about 3 lines */
       resize: none;
-      border: 1px solid #555;
+      border: 1px solid #363636;
       border-radius: 8px;
       padding: 8px;
-      background: #3a3a3a;
+      background: #181818;
       color: #fff;
       outline: none;
       
@@ -292,7 +290,35 @@ html {
       padding: 6px;
       border-radius: 6px;
       border: 1px solid #555;
-      background: #3a3a3a;
+      background: #181818;
       color: #fff;
       cursor: pointer;
     }
+
+    .prompt-input1 {
+      margin-top: 20px;
+      padding: 16px;
+      background: #181818;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      color: #fff;
+      font-size: 18px;
+      width: 900px;
+      position: relative;
+        top: 650px;  
+        left: 300px;
+        height: 1000px;
+    }
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #333;
+    color: #e0e0e0;
+    font-size: 14px;
+    position: relative;
+    top: 710px;
+    width: 90%;
+    border-radius: 100px;
+    left: 75px;
+}

@@ -75,11 +75,10 @@
         }
     </style>
 </head>
-<body>
-    <div class="background-video">
-        <video src="Shape_08.mp4" autoplay loop muted playsinline></video>
-    </div>
-
+<>
+    
+        <video class="background-video" src="Shape_08.mp4" autoplay loop muted playsinline ></video>
+    
     <div class="overlay" id="overlay">
         <div class="container">
             <p class="finance-text">FINANCE AI</p>
@@ -112,21 +111,18 @@
         <h1>Welcome to Finance AI</h1>
         <p>Your trusted partner in financial statements</p>
         <!-- <button class="get-started-button">Get Started</button> -->
-        <button onclick="scrollToHeight" class="get-started-button" style="text-decoration: none;">Get Started</button>
-    <script>
+        <button onclick="scrollToHeight()" class="get-started-button">Get Started</button>
+
+  <script>
     function scrollToHeight() {
-      // Change 800 to the height you want to scroll to (in px)
+      // Change 1000 to the height you want to scroll to (in pixels)
       window.scrollTo({
-        height: 800,
-        top: 800,
-        behavior: "smooth"
+        height: 10,
+        top: 10, 
+        behavior: "smooth"  // makes it animated
       });
     }
   </script>
-    </div>
-    
-    <div class="visulazer">
-        <video src="visualizer.webm" autoplay loop muted playsinline class="visualizer-video"></video>
     </div>
     
     <div class="logo-trans" style="background-image: url(removebglogo.png);"></div>
@@ -235,6 +231,13 @@
       </select>
     </div>
   </div>
+ <textarea class="prompt-input1" ></textarea>
+  
+
 <script src="main.js"></script>
+
+<footer>
+    <p>&copy; 2025 Finance AI. All rights reserved.</p>
+</footer>
 </body>
 </html>
