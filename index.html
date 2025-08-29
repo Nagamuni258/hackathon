@@ -110,7 +110,12 @@
     <div class="content">
         <h1>Welcome to Finance AI</h1>
         <p>Your trusted partner in financial statements</p>
-        <button class="get-started-button">Get Started</button>
+        <!-- <button class="get-started-button">Get Started</button> -->
+        <a href="#details" class="get-started-button">Get Started</a>
+        <section id="details">
+    
+    </section>
+
     </div>
     
     <div class="visulazer">
@@ -197,5 +202,32 @@
             });
         }
     </script>
+
+    
+
+    <div class="prompt-box">
+    <!-- Three input boxes -->
+    <div class="top-inputs">
+      <input type="text" placeholder="Input 1">
+      <input type="text" placeholder="Input 2">
+      <input type="text" placeholder="Output">
+    </div>
+
+    <!-- Prompt input -->
+    <textarea class="prompt-input" placeholder="Enter your prompt here..."></textarea>
+
+    <!-- Actions: left = model changer, right = dropdown -->
+    <div class="actions">
+      <button class="model-changer">Change Model</button>
+      <select class="dropdown">
+        <option>Investment</option>
+        <option>Profits and Loss</option>
+        <option>Personal Guidance</option>
+        <option>Taxes</option>
+        <option>Savings</option>
+      </select>
+    </div>
+  </div>
+
 </body>
 </html>
