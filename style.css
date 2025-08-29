@@ -197,3 +197,14 @@ body{
     padding: 20px;
     padding-right: 100px;
 }
+.logo-trans{
+    position: absolute;
+    top: 240px;
+    height: 300px;
+    width: 300px;
+    background-image: url(removebglogo.png);
+    background-size: cover;
+    left: 1000px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 40px #00fff7);
+}
