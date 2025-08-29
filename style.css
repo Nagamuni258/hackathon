@@ -208,3 +208,14 @@ body{
     background-repeat: no-repeat;
     filter: drop-shadow(0 0 40px #00fff7);
 }
+
+.Chat-text {
+    position: absolute;
+    top: 900px;
+    left: 490px;
+    width: 600px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 36px;
+}

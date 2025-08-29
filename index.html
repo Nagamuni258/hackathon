@@ -3,39 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Finance AI</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Popup modal styles (shared for About, Services, Contact) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background: rgba(0,0,0,0.7);
+        }
+        .modal-content {
+            background: #111;
+            margin: 8% auto;
+            padding: 20px;
+            border-radius: 15px;
+            width: 60%;
+            color: #fff;
+            box-shadow: 0px 4px 20px rgba(255,255,255,0.2);
+            animation: fadeIn 0.3s ease-in-out;
+            font-family: sans-serif;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.9);}
+            to {opacity: 1; transform: scale(1);}
+        }
+        .modal h2 {
+            margin-top: 0;
+            color: #00ffcc;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            background: #222;
+            color: #fff;
+        }
+        .contact-form button {
+            background: #00ffcc;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background: #00cc99;
+        }
+    </style>
 </head>
 <body>
-     <div class="background-video">
-            <video src="Shape_08.mp4" autoplay loop muted playsinline></video>
+    <div class="background-video">
+        <video src="Shape_08.mp4" autoplay loop muted playsinline></video>
     </div>
 
-     <div class="overlay" id="overlay">
+    <div class="overlay" id="overlay">
         <div class="container">
             <p class="finance-text">FINANCE AI</p>
         </div>
-    <div class="logo"></div>
+        <div class="logo"></div>
     </div>
     <script>
-        // Wait 3 seconds, then fade out the overlay
+        // Wait 2.5 seconds, then fade out the overlay
         setTimeout(() => {
-        const overlay = document.getElementById('overlay');
-        overlay.classList.add('hidden');
+            const overlay = document.getElementById('overlay');
+            overlay.classList.add('hidden');
         }, 2500);
     </script>
 
-        <div class="logo-nav" style="background-image: url(Screenshot\ 2025-08-29\ 013743.png);">
-            </div>
-        <div class="logo-nav-text">FINANCE AI</div>
+    <div class="logo-nav" style="background-image: url(Screenshot%202025-08-29%20013743.png);"></div>
+    <div class="logo-nav-text">FINANCE AI</div>
 
-    <div class="nav-bar" >
+    <div class="nav-bar">
         <a href="#" class="nav-link" style="text-decoration: none;color: white;">Home</a>
-        <a href="#" class="nav-link" style="text-decoration: none;color: white;">About</a>
-        <a href="#" class="nav-link" style="text-decoration: none;color: white;">Services</a>
-        <a href="#" class="nav-link" style="text-decoration: none;color: white;">Contact</a>
+        <a href="#" class="nav-link" onclick="openModal('aboutModal')" style="text-decoration: none;color: white;">About</a>
+        <a href="#" class="nav-link" onclick="openModal('servicesModal')" style="text-decoration: none;color: white;">Services</a>
+        <a href="#" class="nav-link" onclick="openModal('contactModal')" style="text-decoration: none;color: white;">Contact</a>
     </div>
-        
+            
     <button class="login-button">
         <a href="log.html" class="login-link" style="text-decoration: none;color: rgb(0, 0, 0); font-weight: 1000;">Login</a>
     </button>
@@ -47,11 +114,88 @@
     </div>
     
     <div class="visulazer">
-    <video src="visualizer.webm" autoplay loop muted playsinline
-        class="visualizer-video"></video>
+        <video src="visualizer.webm" autoplay loop muted playsinline class="visualizer-video"></video>
     </div>
     
     <div class="logo-trans" style="background-image: url(removebglogo.png);"></div>
 
-    </body>
+    <div class="Chat-text">
+        <h2>Chat with Finance AI</h2>
+        <p>Ask questions about your financial statements and get instant answers.</p>
+    </div>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+            <h2>About Our Financial Chatbot</h2>
+            <p>
+                Our Financial Chatbot is an intelligent virtual assistant designed to simplify personal finance management. 
+                It provides real-time guidance on <b>savings, investments, budgeting, and taxes</b>, helping users make informed financial decisions.
+            </p>
+            <p>
+                By leveraging <b>AI and natural language processing</b>, the chatbot can understand user queries, provide tailored suggestions, and even analyze spending patterns to offer personalized insights. Its goal is to make financial planning <b>simple, accessible, and reliable</b> for everyone, whether you are a student, working professional, or business owner.
+            </p>
+            <p>
+                With features like <b>expense tracking, tax reminders, savings tips, and investment guidance</b>, this chatbot acts as a <b>24/7 financial advisor</b> at your fingertips.
+            </p>
+        </div>
+    </div>
+
+    <!-- Services Modal -->
+    <div id="servicesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('servicesModal')">&times;</span>
+            <h2>Our Services</h2>
+            <p><b>1. AI-Powered Financial Analysis</b><br>
+            Helps users make smarter money decisions by analyzing income, expenses, and country-specific taxes.</p>
+            <p><b>2. Budget Calculator</b><br>
+            Plan monthly or yearly budgets, track spending, and stay within financial goals.</p>
+            <p><b>3. Tax Estimation & Planning</b><br>
+            Provides real-time tax breakdowns and strategies to maximize post-tax savings.</p>
+            <p><b>4. Smart Savings & Investment Guidance</b><br>
+            Suggests how much to save and invest based on user preferences.</p>
+            <p><b>5. 24/7 Virtual Financial Assistant</b><br>
+            Always available to provide insights, reminders, and suggestions.</p>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><b>Email:</b> vinjamuribhargav5@gmail.com</p>
+                <p><b>Phone:</b> +91 8008140413</p>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Open modal
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+        // Close modal
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
 </html>
