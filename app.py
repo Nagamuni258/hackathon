@@ -3,7 +3,7 @@ from google import genai
 # Initialize client (use your actual API key)
 client = genai.Client(api_key="AIzaSyDUopVpP-AxBgtkgu2iy9HegxB02TBg9PU")
 
-print("💬 Gemini Chatbot (type 'exit' to quit)\n")
+print("💬 finance Chatbot (type 'exit' to quit)\n")
 
 while True:
     # Take user input
