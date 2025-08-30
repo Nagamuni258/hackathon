@@ -322,3 +322,13 @@ footer {
     border-radius: 100px;
     left: 75px;
 }
+.get-started-button3 {
+    background-color: #4CAF50;
+    color: white;
+    height: 40px;
+    width: 150px;
+    z-index: 10;
+    position: relative;
+    top: 600px;
+    left: 680px;
+}
